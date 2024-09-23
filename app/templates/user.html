@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML project</title>
+    <style>
+        .dt{
+            font-weight: bolder;
+        }
+        #back{
+        /* background-color: rgb(11, 15, 15); */
+        background-image: url(./static/ec.avif);
+        background-attachment: fixed;
+      }
+      #back1{
+        /* background-color: rgb(11, 15, 15); */
+        background-image: url(./static/h8.jpg);
+        background-attachment: fixed;
+      }
+    </style>
+</head>
+<body style="background-color: rgb(3, 3, 3);" >
+    <p style="color: beige;">****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************</p>
+    {% if predict %}
+    <div id="back1">
+    <h1 style="text-align: center;  color: red;background-color: beige;">Heart Failure Detection</h1>
+    <img src="{% static 'yes.jpg' %}" alt="My image" style="width: 50%;padding-left: 25%;">
+    <div style="background-color: beige;">
+    <h3 style="text-align: center;background-color: beige;">The person has<span style="background-color: beige;color: red;"> chance of Heart Failure</span></h3>
+    <h3 style="text-align: center;background-color: beige;color: red;">Consult Doctor as soon as possible to prevent from severe risks.</h3>
+    
+    <h3>Here few important points to help prevent and manage heart failure:</h3>
+    <ul>
+        <li>
+            <dl>
+                <dt class="dt">Regular Exercise:</dt>
+                <dd>Engage in regular physical activity as advised by your healthcare provider. Aim for at least 150 minutes of moderate-intensity exercise per week, such as brisk walking, cycling, or swimming.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Healthy Diet:</dt>
+                <dd>Follow a heart-healthy diet rich in fruits, vegetables, whole grains, lean proteins, and low-fat dairy. Reduce sodium, saturated fats, trans fats, and cholesterol intake.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Maintain a Healthy Weight:</dt>
+                <dd>Achieve and maintain a healthy body weight to reduce strain on the heart and lower the risk of heart failure.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Maintain a Healthy Weight:</dt>
+                <dd>Achieve and maintain a healthy body weight to reduce strain on the heart and lower the risk of heart failure.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Manage Blood Pressure:</dt>
+                <dd>Monitor and control blood pressure through a combination of a healthy diet, regular exercise, medication, and stress management.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Control Cholesterol Levels:</dt>
+                <dd>Manage cholesterol levels with a heart-healthy diet, regular exercise, and prescribed medications if needed.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Manage Diabetes:</dt>
+                <dd>If you have diabetes, work closely with your healthcare team to manage blood sugar levels through diet, exercise, medication, and regular monitoring.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Stop Smoking:</dt>
+                <dd>Quit smoking to reduce the risk of heart disease and improve overall cardiovascular health.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Avoid Illicit Drug Use:</dt>
+                <dd>Avoid the use of illegal substances or non-prescribed medications, as they can harm the heart and exacerbate heart failure.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Stay Hydrated:</dt>
+                <dd>Maintain proper hydration, but be cautious of excessive fluid intake if you have heart failure. Follow your healthcare provider's recommendations regarding fluid restriction.</dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt class="dt">Regular Check-ups:</dt>
+                <dd>Attend regular check-ups with your healthcare provider to monitor your heart health, manage existing conditions, and adjust treatment plans as needed.</dd>
+            </dl>
+        </li>
+    </ul>
+    <h4>For More----<a href="https://en.wikipedia.org/wiki/Heart_failure" target="_blank">Click Me!</a></h4>
+</div>
+</div>
+    {% else %}
+    <div id="back">
+    <h1 style="text-align: center;  color: rgb(36, 241, 71);background-color: beige;">Heart Failure Detection</h1>
+    <img src="{% static 'no.png' %}" alt="My image" style="width: 50%;padding-left: 25%;">
+    <div style="background-color: beige;">
+    <h3 style="text-align: center;background-color: beige;">The person <span style="background-color: rgb(23, 240, 70);color: rgb(26, 23, 23);">not have chance of Heart Failure</span></h3>
+    <h3 style="text-align: center;background-color: beige;color: rgb(36, 241, 71);">Your Heart is Strong likes your confident.</span></h3>
+    
+        <h3>Here few important points to help prevent and manage heart failure:</h3>
+        <ul>
+            <li>
+                <dl>
+                    <dt class="dt">Regular Exercise:</dt>
+                    <dd>Engage in regular physical activity as advised by your healthcare provider. Aim for at least 150 minutes of moderate-intensity exercise per week, such as brisk walking, cycling, or swimming.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Healthy Diet:</dt>
+                    <dd>Follow a heart-healthy diet rich in fruits, vegetables, whole grains, lean proteins, and low-fat dairy. Reduce sodium, saturated fats, trans fats, and cholesterol intake.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Maintain a Healthy Weight:</dt>
+                    <dd>Achieve and maintain a healthy body weight to reduce strain on the heart and lower the risk of heart failure.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Maintain a Healthy Weight:</dt>
+                    <dd>Achieve and maintain a healthy body weight to reduce strain on the heart and lower the risk of heart failure.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Manage Blood Pressure:</dt>
+                    <dd>Monitor and control blood pressure through a combination of a healthy diet, regular exercise, medication, and stress management.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Control Cholesterol Levels:</dt>
+                    <dd>Manage cholesterol levels with a heart-healthy diet, regular exercise, and prescribed medications if needed.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Manage Diabetes:</dt>
+                    <dd>If you have diabetes, work closely with your healthcare team to manage blood sugar levels through diet, exercise, medication, and regular monitoring.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Stop Smoking:</dt>
+                    <dd>Quit smoking to reduce the risk of heart disease and improve overall cardiovascular health.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Avoid Illicit Drug Use:</dt>
+                    <dd>Avoid the use of illegal substances or non-prescribed medications, as they can harm the heart and exacerbate heart failure.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Stay Hydrated:</dt>
+                    <dd>Maintain proper hydration, but be cautious of excessive fluid intake if you have heart failure. Follow your healthcare provider's recommendations regarding fluid restriction.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt class="dt">Regular Check-ups:</dt>
+                    <dd>Attend regular check-ups with your healthcare provider to monitor your heart health, manage existing conditions, and adjust treatment plans as needed.</dd>
+                </dl>
+            </li>
+        </ul>
+        <h4>For More----<a href="https://en.wikipedia.org/wiki/Heart_failure" target="_blank">Click Me!</a></h4>
+    </div>
+</div>
+    {% endif %}
+</body>
+</html>
